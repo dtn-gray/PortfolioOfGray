@@ -1,0 +1,63 @@
+{
+  "sheetsById": {
+    "Progress Animation": {
+      "staticOverrides": {
+        "byObject": {
+          "Progress Control": {
+            "progress": 1
+          }
+        }
+      },
+      "sequence": {
+        "subUnitsPerUnit": 30,
+        "length": 10,
+        "type": "PositionalSequence",
+        "tracksByObject": {
+          "Progress Control": {
+            "trackData": {
+              "hVc0Ru3ht-": {
+                "type": "BasicKeyframedTrack",
+                "__debugName": "Progress Control:[\"progress\"]",
+                "keyframes": [
+                  {
+                    "id": "szPRZwdvO9",
+                    "position": 0,
+                    "connectedRight": true,
+                    "handles": [
+                      0.5,
+                      1,
+                      0.5,
+                      0
+                    ],
+                    "type": "bezier",
+                    "value": 1
+                  },
+                  {
+                    "id": "CBnNhQlyIN",
+                    "position": 2,
+                    "connectedRight": true,
+                    "handles": [
+                      0.5,
+                      1,
+                      0.5,
+                      0
+                    ],
+                    "type": "bezier",
+                    "value": 0
+                  }
+                ]
+              }
+            },
+            "trackIdByPropPath": {
+              "[\"progress\"]": "hVc0Ru3ht-"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitionVersion": "0.4.0",
+  "revisionHistory": [
+    "LtImc6eqCaBL7z4v"
+  ]
+}

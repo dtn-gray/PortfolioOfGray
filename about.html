@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/global.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+</head>
+
+<body data-barba="wrapper">
+    <div class="transition"></div>
+    <div class="menu-container">
+      <nav>
+        <div class="logo"><img src="src/assets/img/logo.png" alt=""/></div>
+        <p class="menu-open">Menu</p>
+      </nav>
+  
+      <div class="menu">
+        <div class="menu-nav"><p class="menu-close">Close</p></div>
+  
+        <div class="menu-col menu-img">
+          <img src="src/assets/img/1.png" alt="" id="img-1"/>
+          <img src="src/assets/img/2.png" alt="" id="img-2"/>
+          <img src="src/assets/img/3.png" alt="" id="img-3"/>
+          <img src="src/assets/img/4.png" alt="" id="img-4"/>
+        </div>
+  
+        <div class="menu-col menu-items"> 
+          <div class="menu-logo">
+            <img src="src/assets/img/logo.png" alt=""/>
+          </div>
+  
+          <div class="menu-links">
+              <div class="menu-link">
+                  <p><a href="index.html" data-barba="link">Home</a></p>
+              </div>  
+  
+              <div class="menu-link">
+                  <p><a href="about.html" data-barba="link">About</a></p>
+              </div>
+  
+              <div class="menu-link">
+                  <p><a href="works.html" data-barba="link">Works</a></p>
+              </div>
+          </div>
+  
+          <div class="menu-footer">
+            <div class="menu-sub-col">
+              <div class="menu-sub-item"><p>Contact me</p></div>
+              <div class="menu-sub-item"><p>&nbsp;</p></div>
+              <br />
+              <div class="menu-sub-item"><p>Email</p></div>
+              <br />
+              <div class="menu-sub-item"><p>Ho Chi Minh City</p></div>
+          </div>
+  
+          <div class="menu-sub-col">
+              <div class="menu-sub-item"><p><a href="https://www.instagram.com/nahnirtgnad/">Instagram</a></p></div>
+              <div class="menu-sub-item"><p><a href="https://www.facebook.com/nhandgtri">Facebook</a></p></div>
+              <br />
+              <div class="menu-sub-item"><p>dtn.gray@gmail.com</p></div>
+          </div>
+      </div>
+      </div>
+        <script src="./menu.js" type="module"></script>
+  </div>
+    
+
+        <main data-barba="container" data-barba-namespace="about">
+            <div id="loading-screen" class="loading-screen">
+                <div class="loading-gif"></div>
+                <div class="loading-text">LOADING<span class="dots"></span></div>
+            </div>
+            <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <script>
+      var cursor = $(".cursor"),
+          follower = $(".cursor-follower");
+  
+      var posX = 0,
+          posY = 0,
+          mouseX = 0,
+          mouseY = 0;
+  
+      TweenMax.to({}, 0.016, {
+          repeat: -1,
+          onRepeat: function() {
+              posX += (mouseX - posX) / 9;
+              posY += (mouseY - posY) / 9;
+  
+      TweenMax.set(follower, {
+        css: {
+          left: posX - 20,
+          top: posY - 20
+        }
+      });
+  
+      TweenMax.set(cursor, {
+        css: {
+          left: mouseX,
+          top: mouseY
+        }
+      });
+          }
+      });
+  
+      $(document).on("mousemove", function (e) {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  });
+  
+  $("body").on("mouseenter", "a, button, .interactive", function() {
+      cursor.addClass("active");
+      follower.addClass("active");
+  });
+  
+  $("body").on("mouseleave", "a, button, .interactive", function() {
+      cursor.removeClass("active");
+      follower.removeClass("active");
+  });
+  
+  </script>
+            <div class="o" id="container">
+                <script src="src/About/mainAbout.js" type="module"></script>
+            </div>
+            <div class="o" id="liquid-container">
+                <script type="module" src="src/Home/liquid.js"></script>
+            </div>
+            <div class="columns">
+                <div class="title-column">
+                    <h1>About me</h1>
+                </div>
+                <div class="content-column">
+                    <div class="section" id="section1">
+                        <p>A digital media student at RMIT University Vietnam, I am passionate about blending creativity
+                            with technology to craft innovative and impactful designs.</p>
+                    </div>
+                    <div class="section" id="section2">
+                        <p>Diving into
+                            digital designs opened up endless possibilities for me, transforming the way I approach
+                            creativity. With each project, I push the boundaries of what’s possible, striving to reach
+                            new heights while ensuring that quality remains at the forefront of everything I do.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script>
+            window.onbeforeunload = function () {
+              window.scrollTo(0, 0);
+            };
+          </script>
+
+        <script src="transitions.js" type="module"></script>
+</body>
+
+</html>

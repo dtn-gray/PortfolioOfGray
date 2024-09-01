@@ -1,0 +1,218 @@
+{
+  "sheetsById": {
+    "Head Animation": {
+      "staticOverrides": {
+        "byObject": {
+          "Settings": {
+            "mosaic": 4,
+            "start": 0,
+            "translate": 0
+          }
+        }
+      },
+      "sequence": {
+        "subUnitsPerUnit": 30,
+        "length": 10,
+        "type": "PositionalSequence",
+        "tracksByObject": {
+          "Settings": {
+            "trackData": {
+              "sG6H2SBnxF": {
+                "type": "BasicKeyframedTrack",
+                "__debugName": "Settings:[\"start\"]",
+                "keyframes": [
+                  {
+                    "id": "SfM69K_VES",
+                    "position": 0,
+                    "connectedRight": true,
+                    "handles": [
+                      0.5,
+                      1,
+                      0.5,
+                      0
+                    ],
+                    "type": "bezier",
+                    "value": 1
+                  },
+                  {
+                    "id": "oAUVA6SJpq",
+                    "position": 2,
+                    "connectedRight": true,
+                    "handles": [
+                      0.5,
+                      1,
+                      0.5,
+                      0
+                    ],
+                    "type": "bezier",
+                    "value": 0
+                  },
+                  {
+                    "id": "h_pxVnlOOT",
+                    "position": 3,
+                    "connectedRight": true,
+                    "handles": [
+                      0.5,
+                      1,
+                      0.5,
+                      0
+                    ],
+                    "type": "bezier",
+                    "value": 0.2025316455696205
+                  },
+                  {
+                    "id": "RLj5plXfRL",
+                    "position": 3.4,
+                    "connectedRight": true,
+                    "handles": [
+                      0.5,
+                      1,
+                      0.5,
+                      0
+                    ],
+                    "type": "bezier",
+                    "value": 0
+                  }
+                ]
+              },
+              "PJOj6RFAS_": {
+                "type": "BasicKeyframedTrack",
+                "__debugName": "Settings:[\"progress\"]",
+                "keyframes": [
+                  {
+                    "id": "xjaX3LdCoP",
+                    "position": 3.4,
+                    "connectedRight": true,
+                    "handles": [
+                      0.5,
+                      1,
+                      0.5,
+                      0
+                    ],
+                    "type": "bezier",
+                    "value": 0
+                  },
+                  {
+                    "id": "7Rnl5oxXgD",
+                    "position": 4.4,
+                    "connectedRight": true,
+                    "handles": [
+                      0.5,
+                      1,
+                      0.5,
+                      0
+                    ],
+                    "type": "bezier",
+                    "value": 1
+                  }
+                ]
+              },
+              "rtMTK7McFz": {
+                "type": "BasicKeyframedTrack",
+                "__debugName": "Settings:[\"mosaic\"]",
+                "keyframes": [
+                  {
+                    "id": "XAYZsXLUhm",
+                    "position": 3.4,
+                    "connectedRight": true,
+                    "handles": [
+                      0.5,
+                      1,
+                      0.5,
+                      0
+                    ],
+                    "type": "bezier",
+                    "value": 4
+                  },
+                  {
+                    "id": "IT04OkloBG",
+                    "position": 4.4,
+                    "connectedRight": true,
+                    "handles": [
+                      0.5,
+                      1,
+                      0.5,
+                      0
+                    ],
+                    "type": "bezier",
+                    "value": 0.5822784810126568
+                  }
+                ]
+              },
+              "LkZLHL3fG2": {
+                "type": "BasicKeyframedTrack",
+                "__debugName": "Settings:[\"triScale\"]",
+                "keyframes": [
+                  {
+                    "id": "ZkUMCw492v",
+                    "position": 2,
+                    "connectedRight": true,
+                    "handles": [
+                      0.5,
+                      1,
+                      0.5,
+                      0
+                    ],
+                    "type": "bezier",
+                    "value": 1
+                  },
+                  {
+                    "id": "F0pOOh5VbJ",
+                    "position": 3,
+                    "connectedRight": true,
+                    "handles": [
+                      0.5,
+                      1,
+                      0.5,
+                      0
+                    ],
+                    "type": "bezier",
+                    "value": 0.4683544303797468
+                  },
+                  {
+                    "id": "gwweuVm_Ed",
+                    "position": 3.4,
+                    "connectedRight": true,
+                    "handles": [
+                      0.5,
+                      1,
+                      0.5,
+                      0
+                    ],
+                    "type": "bezier",
+                    "value": 1
+                  },
+                  {
+                    "id": "a5NC6Pd8CD",
+                    "position": 4.4,
+                    "connectedRight": true,
+                    "handles": [
+                      0.5,
+                      1,
+                      0.5,
+                      0
+                    ],
+                    "type": "bezier",
+                    "value": 0.8417721518987346
+                  }
+                ]
+              }
+            },
+            "trackIdByPropPath": {
+              "[\"start\"]": "sG6H2SBnxF",
+              "[\"progress\"]": "PJOj6RFAS_",
+              "[\"mosaic\"]": "rtMTK7McFz",
+              "[\"triScale\"]": "LkZLHL3fG2"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitionVersion": "0.4.0",
+  "revisionHistory": [
+    "Gp8ZacIuV70jX_5P",
+    "D2tsYtHSa06mC082",
+    "Uq96e-UdaSg1Eaav"
+  ]
+}

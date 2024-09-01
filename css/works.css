@@ -1,0 +1,259 @@
+@font-face {
+    font-family: 'Bonnes';
+    src: url(../src/assets/fonts/BONNES.ttf);
+}
+@font-face {
+    font-family: 'Neue';
+    src: url(../src/assets/fonts/HelveticaNeueMedium.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+body {
+    background-color: #101010 ;
+    overflow-x: hidden;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Bonnes';
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+p {
+    color: #fff;
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    padding: 1.5em 2em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 300;
+}
+
+.logo {
+    width: 50px;
+    mix-blend-mode: difference;
+}
+
+.menu-open, .menu-close {
+    cursor: pointer;
+    mix-blend-mode: difference;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    padding: 1.5em;
+    width: 100vw;
+    height: 100vh;
+    background-color: #101010;
+    color: #fff;
+    display: flex;
+    gap: 1.5em;
+    overflow: hidden;
+    z-index: 301;
+    pointer-events: none;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+}
+
+.menu-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 302;
+}
+
+.menu-img {
+    position: relative;
+    flex: 3;
+    overflow: hidden;
+}
+
+.menu-items {
+    position: relative;
+    top: 0px;
+    flex: 1;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 299;
+    font-family: 'Neue';
+}
+
+.menu-img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#img-1 {
+    opacity: 0.9;
+}
+#img-2 {
+    opacity: 0.7;
+}
+#img-3 {
+    opacity: 0.5;
+}
+#img-4 {
+    opacity: 0.3;
+}
+
+.menu-logo {
+    width: 48px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.menu-logo img {
+    position: relative;
+}
+
+.menu-link p {
+    position: relative;
+    font-family: 'Bonnes';
+    font-size:3rem;
+    font-weight: 700;
+    overflow: hidden;
+}
+
+.menu-link a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-footer {
+    width: 100%;
+    display: flex;
+}
+
+.menu-sub-col {
+    flex: 1;
+}
+
+.menu-sub-item p {
+    position: relative;
+}
+
+.menu-link, .menu-sub-item {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+@media (max-width: 900px) {
+    .menu-img {
+        display: none;
+    }
+}
+
+.section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sectiontrigger {
+    min-height: 20vh;
+    width: 100vw;
+    position: relative;
+    border: #fff;
+}
+
+#section1 {
+    background-color: #101010;
+    color: white;
+    text-align: center;
+}
+
+#section1 .project-title {
+    font-family: 'Barrage';
+    font-size: 12em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+    z-index: 98;
+}
+
+#section2 {
+    background-color: #000;
+}
+
+#container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    /* background-color: red; */
+    mix-blend-mode: difference ;
+    pointer-events: none;
+}
+
+.image-sketch-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 97;
+}
+
+.text-sketch-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 97;
+    mix-blend-mode: difference;
+}
+
+#liquid-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    mix-blend-mode: difference;
+    pointer-events: none;
+}
