@@ -43,7 +43,7 @@ body::before {
 .loading-gif {
     width: 200px;
     height: 200px;
-    background-image: url('/loading.gif');
+    background-image: url('../loading.gif');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
