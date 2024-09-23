@@ -6,6 +6,10 @@
     font-family: 'Neue';
     src: url(../src/assets/fonts/HelveticaNeueMedium.otf);
 }
+@font-face {
+    font-family: 'Peach';
+    src: url(../src/assets/fonts/Peach\ Classy.ttf);
+}
 
 * {
     margin: 0;
@@ -256,7 +260,7 @@ nav {
 .section p {
     font-size: 1.5em;
     padding-top: 30%;
-    font-family: 'Neue';
+    font-family: 'Peach';
     text-align: left;
     text-transform: none;
 }
@@ -264,7 +268,7 @@ nav {
 .section h1 {
     font-size: 2em;
     padding-top: 30%;
-    font-family: 'Neue';
+    font-family: 'Peach';
     text-align: left;
     text-transform: none;
 }
